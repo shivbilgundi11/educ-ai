@@ -13,14 +13,8 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center justify-center gap-3">
-          <Button onClick={() => navigate('/login')} variant={'secondary'}>
-            Login
-          </Button>
-          <Button
-            variant={'ghost'}
-            className="border text-white"
-            onClick={() => navigate('/sign-up')}
-          >
+          <Button onClick={() => navigate('/login')}>Login</Button>
+          <Button variant={'outline'} onClick={() => navigate('/sign-up')}>
             Sign up
           </Button>
         </div>
