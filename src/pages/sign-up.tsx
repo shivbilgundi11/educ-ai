@@ -1,26 +1,22 @@
+import { GalleryVerticalEnd } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SignUpForm } from '@/components/sign-up-form';
 
 export default function SignUp() {
   return (
-    <>
-      <div className="flex min-h-screen w-full flex-col items-center justify-center gap-y-3">
-        <h1 className="text-3xl font-bold underline">Hello SignUp...!</h1>
-
-        <div>
-          <Link to={'/'} className="m-2 underline">
-            Go to Home
-          </Link>
-          <Link to={'/login'} className="m-2 underline">
-            Go to Login
-          </Link>
-          <Link to={'/dashboard'} className="m-2 underline">
-            Go to Dasboard
-          </Link>
-          <Link to={'/ask-edu-ai'} className="m-2 underline">
-            Go to AI Chat
-          </Link>
-        </div>
+    <div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-muted p-6 md:p-10">
+      <div className="flex w-full max-w-sm flex-col gap-6">
+        <Link
+          to="/"
+          className="flex items-center gap-2 self-center font-medium"
+        >
+          <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
+            <GalleryVerticalEnd className="size-4" />
+          </div>
+          edu.AI
+        </Link>
+        <SignUpForm />
       </div>
-    </>
+    </div>
   );
 }

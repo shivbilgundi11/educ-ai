@@ -57,13 +57,13 @@ export default function ChatBotPage() {
                 className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`rounded-lg px-4 py-2 ${
+                  className={`overflow-hidden rounded-lg px-4 py-2 ${
                     msg.sender === 'user'
                       ? 'bg-black text-white'
                       : 'bg-gray-200 text-black'
-                  }`}
+                  } ${msg.sender === 'user' ? 'w-max max-w-[65%]' : 'w-max max-w-[65%]'}`}
                 >
-                  {msg.text}
+                  <p>{msg.text}</p>
                 </div>
               </div>
             ))}
