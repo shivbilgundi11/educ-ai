@@ -1,3 +1,5 @@
+import { Button } from './components/ui/button';
+
 export default function App() {
   return (
     <>
@@ -6,6 +8,8 @@ export default function App() {
         <p className="font-medium tracking-wide text-gray-500">
           React With TypeScript and TailwindCSS
         </p>
+
+        <Button>Hello shadcn UI</Button>
       </div>
     </>
   );
