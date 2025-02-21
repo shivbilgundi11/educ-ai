@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Login from './pages/login';
 import SignUp from './pages/sign-up';
 import Dashboard from './pages/dashboard';
+import ChatBotPage from './pages/chat-bot';
 
 const routes = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const routes = createBrowserRouter([
   {
     path: '/dashboard',
     element: <Dashboard />,
+  },
+  {
+    path: '/ask-edu-ai',
+    element: <ChatBotPage />,
   },
 ]);
 

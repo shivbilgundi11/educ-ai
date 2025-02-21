@@ -16,6 +16,9 @@ export default function SignUp() {
           <Link to={'/dashboard'} className="m-2 underline">
             Go to Dasboard
           </Link>
+          <Link to={'/ask-edu-ai'} className="m-2 underline">
+            Go to AI Chat
+          </Link>
         </div>
       </div>
     </>
